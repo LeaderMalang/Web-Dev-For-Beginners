@@ -27,7 +27,30 @@ Creating and **declaring** a variable has the following syntax **[keyword] [name
 
 ✅ The keyword `let` was introduced in ES6 and gives your variable a so called _block scope_. It's recommended that you use `let` over `var`. We will cover block scopes more in depth in future parts.
 - **The variable name**, this is a name you choose yourself.
+### Variable Scopes 
+#### Block Scope 
+✅ The keyword `let` was introduced in ES6 and gives your variable a so called _block scope_. 
+``` 
+{
+  let myVariable;
 
+}
+```
+#### Local/Function Scope
+✅ Variables defined within a JavaScript function are confined to the scope of that function and are considered local.
+``` 
+function ScopeFunction(){
+  myVariable=12;
+} 
+```
+#### Global Scope
+✅When declared outside a function, a variable becomes global in scope.
+``` 
+let myVariable=1;
+function myFunction(){
+   myVariable=2;
+}
+```
 ### Task - working with variables
 
 1. **Declare a variable**. Let's declare a variable using the `let` keyword:
